@@ -1,0 +1,90 @@
+﻿<div class="app-content content" *ngIf="isPageLoaded">
+    <div class="content-overlay"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+
+            <!-- <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            <mat-hint *ngIf="!passwordInput.value">Enter your password</mat-hint> -->
+
+            <section class="row flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 col-md-8 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
+                            <div class="card-header border-0">
+                                <div class="card-title text-center">
+                                    <img src="assets/images/logo/logoUAB.png" style="height: 7rem;" alt="branding logo">
+                                </div>
+                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                                    <span>Iniciar sessión</span></h6>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <form class="form-horizontal" [formGroup]="loginForm" (ngSubmit)="tryLogin()">
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="email" formControlName="email" class="form-control"
+                                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="user-name"
+                                                placeholder="Your Username" required>
+                                            <div class="form-control-position">
+                                                <i class="la la-user"></i>
+                                            </div>
+                                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                                <div *ngIf="f.email.errors.required">Username is required</div>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input [type]="hide ? 'password' : 'text'" placeholder="Enter Password"
+                                                formControlName="password" class="form-control"
+                                                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                                            <div class="form-control-position">
+                                                <i class="la la-key"></i>
+                                            </div>
+                                            <div style="padding-left: 477px;" class="form-control-position">
+                                                <mat-icon matSuffix (click)="hide = !hide"> <i class="fa fa-eye"></i>
+                                                </mat-icon>
+                                            </div>
+                                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                                <div *ngIf="f.password.errors.required">Password is required</div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group row">
+                                            <div class="col-md-6  text-center text-sm-left pr-0">
+                                                <fieldset>
+                                                    <div class="icheckbox_square-blue" id="icheckbox"
+                                                        (click)="addCheckbox($event)" style="position: relative;">
+                                                        <input type="checkbox" class="chk-remember"
+                                                            formControlName="rememberMe" name="remember-me"
+                                                            id="remember-me" style="position: absolute; opacity: 0;">
+                                                        <ins class="iCheck-helper"
+                                                            style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                                    </div>
+                                                    <label class="lb-remember" for="remember-me">Recordarme</label>
+
+                                                </fieldset>
+
+                                            </div>
+                                            <div class="col-md-6  float-sm-left text-center text-sm-right"><a
+                                                    href="recover-password.html" class="card-link">¿Se le olvido su
+                                                    contraseña?</a>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-block">
+                                            <i class="fa fa-refresh fa-spin" *ngIf="submitted"></i>
+                                            <i class="feather ft-unlock" *ngIf="!submitted"></i> Ingresar
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="bootstrap-show-password.min.js"></script>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        </div>
+    </div>
+</div>
