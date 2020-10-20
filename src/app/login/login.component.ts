@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   submitted = false;
   returnUrl: string;
   isPageLoaded = false;
-
+  hide = true;
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
@@ -31,8 +31,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      email: ['john@pixinvent.com', Validators.required],
-      password: ['password@123', Validators.required],
+      email: ['', Validators.required],
+      password: ['', Validators.required],
       rememberMe: false
     });
     // Remember Me
@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     }
+    
     const value = {
       email: this.f.email.value,
       password: this.f.password.value

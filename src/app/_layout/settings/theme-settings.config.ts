@@ -21,10 +21,10 @@ export const ThemeSettingsConfig = {
     email: 'on' // on, off
   },
   brand: {
-    brand_name: 'Modern ',
+    brand_name: 'SysUAB ',
     logo: {
       type: 'internal', // internal, url
-      value: 'assets/custom/images/logo.png' // recommended location for custom images
+      value: '../../../../assets/images/logo/logoUABperfil.png' // recommended location for custom images
       // type:'url',
       // value:'http://evolvision.com/wp-content/uploads/2018/01/envelope4-green.png'
     },

@@ -26,27 +26,29 @@
                                         <fieldset class="form-group position-relative has-icon-left">
                                             <input type="email" formControlName="email" class="form-control"
                                                 [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="user-name"
-                                                placeholder="Your Username" required>
+                                                placeholder="Ingrese su correo electronico" required>
                                             <div class="form-control-position">
                                                 <i class="la la-user"></i>
                                             </div>
                                             <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                                                <div *ngIf="f.email.errors.required">Username is required</div>
+                                                <div *ngIf="f.email.errors.required">Correo electronico es requerido
+                                                </div>
                                             </div>
                                         </fieldset>
-                                        <fieldset class="form-group position-relative has-icon-left">
-                                            <input [type]="hide ? 'password' : 'text'" placeholder="Enter Password"
-                                                formControlName="password" class="form-control"
-                                                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-                                            <div class="form-control-position">
+                                        <fieldset class="form-group position-relative  has-icon-left">
+                                            <input style="padding-right: 191px;" [type]="hide ? 'password' : 'text'"
+                                                placeholder="Ingrese su contraseña" formControlName="password"
+                                                class="form-control"
+                                                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required />
+                                            <div class="form-control-position ">
                                                 <i class="la la-key"></i>
                                             </div>
-                                            <div style="padding-left: 477px;" class="form-control-position">
-                                                <mat-icon matSuffix (click)="hide = !hide"> <i class="fa fa-eye"></i>
+                                            <div matSuffix (click)="hide = !hide"  style="left: 92%;" class="form-control-position ">
+                                                <mat-icon> <i class="fa fa-eye"></i>
                                                 </mat-icon>
                                             </div>
                                             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                                                <div *ngIf="f.password.errors.required">Password is required</div>
+                                                <div *ngIf="f.password.errors.required">la contraseña es requerida</div>
                                             </div>
                                         </fieldset>
                                         <div class="form-group row">
