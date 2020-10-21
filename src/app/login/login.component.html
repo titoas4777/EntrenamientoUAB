@@ -36,14 +36,14 @@
                                             </div>
                                         </fieldset>
                                         <fieldset class="form-group position-relative  has-icon-left">
-                                            <input style="padding-right: 191px;" [type]="hide ? 'password' : 'text'"
+                                            <input [type]="hide ? 'password' : 'text'"
                                                 placeholder="Ingrese su contraseña" formControlName="password"
                                                 class="form-control"
                                                 [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required />
                                             <div class="form-control-position ">
                                                 <i class="la la-key"></i>
                                             </div>
-                                            <div matSuffix (click)="hide = !hide"  style="left: 92%;" class="form-control-position ">
+                                            <div matSuffix (click)="hide = !hide"  style="left:88%;" class="form-control-position ">
                                                 <mat-icon> <i class="fa fa-eye"></i>
                                                 </mat-icon>
                                             </div>

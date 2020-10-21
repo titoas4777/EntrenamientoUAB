@@ -863,28 +863,28 @@ export const MenuSettingsConfig: MenuConfig = {
       },
       {
         title: 'Facturación',
-        icon: 'la-television',
+        icon: 'la-cc-jcb',
         page: '/news-feed/news-feed',
       },
 
       {
         title: 'Departamento',
-        icon: 'la-edit',
+        icon: 'la-industry',
         page: '/todo-app'
       },
       {
         title: 'Cuentas',
-        icon: 'la-users',
+        icon: 'la-delicious',
         page: '/contacts'
       },
       {
         title: 'Presupuestos',
-        icon: 'la-envelope',
+        icon: 'la-calculator',
         page: '/email'
       },
       {
         title: 'Arqueos',
-        icon: 'la-comments',
+        icon: 'la-area-chart',
         page: '/chats'
       },
       { section: 'SUPPORT', icon: 'la-ellipsis-h' },

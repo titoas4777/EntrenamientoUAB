@@ -21,7 +21,7 @@ export const ThemeSettingsConfig = {
     email: 'on' // on, off
   },
   brand: {
-    brand_name: 'SysUAB ',
+    brand_name: 'Sys UAB ',
     logo: {
       type: 'internal', // internal, url
       value: '../../../../assets/images/logo/logoUABperfil.png' // recommended location for custom images
@@ -29,5 +29,5 @@ export const ThemeSettingsConfig = {
       // value:'http://evolvision.com/wp-content/uploads/2018/01/envelope4-green.png'
     },
   },
-  defaultTitleSuffix: 'Modern Admin - Angular 10+ Bootstrap 4 Admin Dashboard Template'
+  defaultTitleSuffix: 'Universidad Adventista de Bolivia'
 };
