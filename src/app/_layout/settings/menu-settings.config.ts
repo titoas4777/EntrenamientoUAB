@@ -866,7 +866,7 @@ export const MenuSettingsConfig: MenuConfig = {
         icon: 'la-cc-jcb',
         page: '/news-feed/news-feed',
       },
-
+      
       {
         title: 'Departamento',
         icon: 'la-industry',

@@ -48,11 +48,11 @@
             </div>
           </div>
           <div class="col-md-7">
-            <div class="card">
+            <div class="card" >
 
               <div class="table-responsive card-body">
                 <h4 class="card-title"  id="basic-layout-tooltip">Resultados</h4>
-                <table class="table">
+                <table class="table table-hover">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
@@ -62,7 +62,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let country of countries; index as i">
+                    <tr routerLink="/news-feed/estado-contable" *ngFor="let country of countries; index as i">
                       <th scope="row">{{ i + 1 }}</th>
                       <td>{{ country.firstname }} </td>
                       <td>{{ country.lastname }}</td>
