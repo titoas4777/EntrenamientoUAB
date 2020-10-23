@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estado-contable.component.css']
 })
 export class EstadoContableComponent implements OnInit {
+  
   public breadcrumb: any;
   rows= [
     { "name": "Marban", "position": "Otto", "office": "@mdo", "age": "34", "salary": "16000", "startdate": "16/05/2017"},
@@ -21,6 +22,9 @@ export class EstadoContableComponent implements OnInit {
     { "name": "Jacob", "position": "Thornton", "office": "@fat", "age": "33", "salary": "12000", "startdate": "16/05/2017"},
     { "name": "Larry", "position": "the Bird", "office": "@twitter", "age": "34", "salary": "19000", "startdate": "16/05/2017"}
   ]
+  public isCollapsed = -1;
+  public basicColorCollapse2 = true;
+
   constructor() { }
  
   
